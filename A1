@@ -1,0 +1,49 @@
+
+r=x(90,93)
+s=y(90,93)
+p=x(90,93)
+q=y(90,93)
+st1=90
+st2=93
+for i=1:21
+    P(1,i)=r
+    Q(1,i)=s
+    k=999
+    o=1000
+    for l=-1:0
+        for m=0 :1
+            
+            
+            l
+            m
+            
+                
+                
+                if(l==0 && m==0)
+                
+                else
+                    st1+l
+                    st2+m
+                    x(st1+l,st2+m)
+                    y(st1+l,st2+m)
+                    k=x(st1+l,st2+m)-y(st1+l,st2+m)
+                    if(k<0)
+                    k=-k
+                    else
+                    k=k
+                    end
+                end
+                
+            
+                if(k<o)
+                o=k 
+                r=x(st1+l,st2+m)
+                s=y(st1+l,st2+m)
+                d=l
+                f=m
+            end
+        end
+    end
+    st1=st1+d
+    st2=st2+f
+end
